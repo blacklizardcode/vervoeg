@@ -1,0 +1,367 @@
+{
+  "metadata": {
+    "language": "French",
+    "description": "Sample French verb dataset with important irregular and regular verbs across major tenses",
+    "tenses included": [
+      "present",
+      "imparfait",
+      "futur simple",
+      "passe compose",
+      "conditionnel present",
+      "subjonctif present"
+    ]
+  },
+  "verbs": [
+    {
+      "infinitive": "être",
+      "english": "to be",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "suis",
+          "tu": "es",
+          " il / elle": "est",
+          "nous": "sommes",
+          "vous": "êtes",
+          "ils elles": "sont"
+        },
+        "imparfait": {
+          "je": "étais",
+          "tu": "étais",
+          " il / elle": "était",
+          "nous": "étions",
+          "vous": "étiez",
+          "ils elles": "étaient"
+        },
+        "futur simple": {
+          "je": "serai",
+          "tu": "seras",
+          " il / elle": "sera",
+          "nous": "serons",
+          "vous": "serez",
+          "ils elles": "seront"
+        },
+        "passe compose": {
+          "je": "ai été",
+          "tu": "as été",
+          " il / elle": "a été",
+          "nous": "avons été",
+          "vous": "avez été",
+          "ils elles": "ont été"
+        },
+        "conditionnel present": {
+          "je": "serais",
+          "tu": "serais",
+          " il / elle": "serait",
+          "nous": "serions",
+          "vous": "seriez",
+          "ils elles": "seraient"
+        },
+        "subjonctif present": {
+          "je": "sois",
+          "tu": "sois",
+          " il / elle": "soit",
+          "nous": "soyons",
+          "vous": "soyez",
+          "ils elles": "soient"
+        }
+      }
+    },
+    {
+      "infinitive": "avoir",
+      "english": "to have",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "ai",
+          "tu": "as",
+          " il / elle": "a",
+          "nous": "avons",
+          "vous": "avez",
+          "ils elles": "ont"
+        },
+        "imparfait": {
+          "je": "avais",
+          "tu": "avais",
+          " il / elle": "avait",
+          "nous": "avions",
+          "vous": "aviez",
+          "ils elles": "avaient"
+        },
+        "futur simple": {
+          "je": "aurai",
+          "tu": "auras",
+          " il / elle": "aura",
+          "nous": "aurons",
+          "vous": "aurez",
+          "ils elles": "auront"
+        },
+        "passe compose": {
+          "je": "ai eu",
+          "tu": "as eu",
+          " il / elle": "a eu",
+          "nous": "avons eu",
+          "vous": "avez eu",
+          "ils elles": "ont eu"
+        },
+        "conditionnel present": {
+          "je": "aurais",
+          "tu": "aurais",
+          " il / elle": "aurait",
+          "nous": "aurions",
+          "vous": "auriez",
+          "ils elles": "auraient"
+        },
+        "subjonctif present": {
+          "je": "aie",
+          "tu": "aies",
+          " il / elle": "ait",
+          "nous": "ayons",
+          "vous": "ayez",
+          "ils elles": "aient"
+        }
+      }
+    },
+    {
+      "infinitive": "aller",
+      "english": "to go",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "vais",
+          "tu": "vas",
+          " il / elle": "va",
+          "nous": "allons",
+          "vous": "allez",
+          "ils elles": "vont"
+        },
+        "imparfait": {
+          "je": "allais",
+          "tu": "allais",
+          " il / elle": "allait",
+          "nous": "allions",
+          "vous": "alliez",
+          "ils elles": "allaient"
+        },
+        "futur simple": {
+          "je": "irai",
+          "tu": "iras",
+          " il / elle": "ira",
+          "nous": "irons",
+          "vous": "irez",
+          "ils elles": "iront"
+        },
+        "passe compose": {
+          "je": "suis allé(e)",
+          "tu": "es allé(e)",
+          " il / elle": "est allé(e)",
+          "nous": "sommes allé(e)s",
+          "vous": "êtes allé(e)(s)",
+          "ils elles": "sont allé(e)s"
+        },
+        "conditionnel present": {
+          "je": "irais",
+          "tu": "irais",
+          " il / elle": "irait",
+          "nous": "irions",
+          "vous": "iriez",
+          "ils elles": "iraient"
+        },
+        "subjonctif present": {
+          "je": "aille",
+          "tu": "ailles",
+          " il / elle": "aille",
+          "nous": "allions",
+          "vous": "alliez",
+          "ils elles": "aillent"
+        }
+      }
+    },
+    {
+      "infinitive": "faire",
+      "english": "to do/make",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "fais",
+          "tu": "fais",
+          " il / elle": "fait",
+          "nous": "faisons",
+          "vous": "faites",
+          "ils elles": "font"
+        },
+        "imparfait": {
+          "je": "faisais",
+          "tu": "faisais",
+          " il / elle": "faisait",
+          "nous": "faisions",
+          "vous": "faisiez",
+          "ils elles": "faisaient"
+        },
+        "futur simple": {
+          "je": "ferai",
+          "tu": "feras",
+          " il / elle": "fera",
+          "nous": "ferons",
+          "vous": "ferez",
+          "ils elles": "feront"
+        }
+      }
+    },
+    {
+      "infinitive": "venir",
+      "english": "to come",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "viens",
+          "tu": "viens",
+          " il / elle": "vient",
+          "nous": "venons",
+          "vous": "venez",
+          "ils elles": "viennent"
+        },
+        "imparfait": {
+          "je": "venais",
+          "tu": "venais",
+          " il / elle": "venait",
+          "nous": "venions",
+          "vous": "veniez",
+          "ils elles": "venaient"
+        },
+        "futur simple": {
+          "je": "viendrai",
+          "tu": "viendras",
+          " il / elle": "viendra",
+          "nous": "viendrons",
+          "vous": "viendrez",
+          "ils elles": "viendront"
+        }
+      }
+    },
+    {
+      "infinitive": "prendre",
+      "english": "to take",
+      "group": "irregular",
+      "conjugations": {
+        "present": {
+          "je": "prends",
+          "tu": "prends",
+          " il / elle": "prend",
+          "nous": "prenons",
+          "vous": "prenez",
+          "ils elles": "prennent"
+        },
+        "imparfait": {
+          "je": "prenais",
+          "tu": "prenais",
+          " il / elle": "prenait",
+          "nous": "prenions",
+          "vous": "preniez",
+          "ils elles": "prenaient"
+        },
+        "futur simple": {
+          "je": "prendrai",
+          "tu": "prendras",
+          " il / elle": "prendra",
+          "nous": "prendrons",
+          "vous": "prendrez",
+          "ils elles": "prendront"
+        }
+      }
+    },
+    {
+      "infinitive": "parler",
+      "english": "to speak",
+      "group": "regular -er",
+      "conjugations": {
+        "present": {
+          "je": "parle",
+          "tu": "parles",
+          " il / elle": "parle",
+          "nous": "parlons",
+          "vous": "parlez",
+          "ils elles": "parlent"
+        },
+        "imparfait": {
+          "je": "parlais",
+          "tu": "parlais",
+          " il / elle": "parlait",
+          "nous": "parlions",
+          "vous": "parliez",
+          "ils elles": "parlaient"
+        },
+        "futur simple": {
+          "je": "parlerai",
+          "tu": "parleras",
+          " il / elle": "parlera",
+          "nous": "parlerons",
+          "vous": "parlerez",
+          "ils elles": "parleront"
+        }
+      }
+    },
+    {
+      "infinitive": "finir",
+      "english": "to finish",
+      "group": "regular -ir",
+      "conjugations": {
+        "present": {
+          "je": "finis",
+          "tu": "finis",
+          " il / elle": "finit",
+          "nous": "finissons",
+          "vous": "finissez",
+          "ils elles": "finissent"
+        },
+        "imparfait": {
+          "je": "finissais",
+          "tu": "finissais",
+          " il / elle": "finissait",
+          "nous": "finissions",
+          "vous": "finissiez",
+          "ils elles": "finissaient"
+        },
+        "futur simple": {
+          "je": "finirai",
+          "tu": "finiras",
+          " il / elle": "finira",
+          "nous": "finirons",
+          "vous": "finirez",
+          "ils elles": "finiront"
+        }
+      }
+    },
+    {
+      "infinitive": "vendre",
+      "english": "to sell",
+      "group": "regular -re",
+      "conjugations": {
+        "present": {
+          "je": "vends",
+          "tu": "vends",
+          " il / elle": "vend",
+          "nous": "vendons",
+          "vous": "vendez",
+          "ils elles": "vendent"
+        },
+        "imparfait": {
+          "je": "vendais",
+          "tu": "vendais",
+          " il / elle": "vendait",
+          "nous": "vendions",
+          "vous": "vendiez",
+          "ils elles": "vendaient"
+        },
+        "futur simple": {
+          "je": "vendrai",
+          "tu": "vendras",
+          " il / elle": "vendra",
+          "nous": "vendrons",
+          "vous": "vendrez",
+          "ils elles": "vendront"
+        }
+      }
+    }
+  ]
+}
