@@ -18,11 +18,12 @@ async function readJsonFile(filePath) {
 
 
 addEventListener("DOMContentLoaded", async (event) => { 
-    var verbChip = document.getElementById("verbChip")
-    var tenseChip = document.getElementById("tenseChip")
-    var personText = document.getElementById("personText")
-    var controleerButton = document.getElementById("controleer")
-    var input = document.getElementById("input")
+    const verbChip = document.getElementById("verbChip")
+    const tenseChip = document.getElementById("tenseChip")
+    const personText = document.getElementById("personText")
+    const controleerButton = document.getElementById("controleer")
+    const helpButton = document.getElementById("help")
+    const input = document.getElementById("input")
     const jsonData = await readJsonFile("./verbs.json")
     
     function generateNewQuestion() {
@@ -59,6 +60,10 @@ addEventListener("DOMContentLoaded", async (event) => {
         }
     }
 
+    function help() {
+        input.value = correctAnswer
+    }
+
     controleerButton.addEventListener("click", checkAnswer)
     
     input.addEventListener("keypress", (event) => {
@@ -66,4 +71,6 @@ addEventListener("DOMContentLoaded", async (event) => {
             checkAnswer()
         }
     })
+
+    helpButton.addEventListener("click", help)
 })
