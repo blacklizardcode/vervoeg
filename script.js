@@ -1,3 +1,6 @@
+let errorCount;
+let messages;
+
 async function readJsonFile(filePath) {
     try {
         const response = await fetch(filePath)
@@ -14,6 +17,39 @@ async function readJsonFile(filePath) {
     }
 }
 
+function createMessage(text, subtext, level) {
+    const messageContainer = document.createElement("div")
+    
+    const messageTitle = document.createElement("p")
+    const messageDesc = document.createElement("p")
+
+    
+    messageTitle.classList.add("messageTitle")
+    messageDesc.classList.add("messageDesc")
+    messageContainer.classList.add("message")
+    messageTitle.innerText = text
+    messageDesc.innerText = subtext
+    if (level == 1) {
+        messageContainer.classList.add("messageRed")
+    } else if (level == 2) {
+        messageContainer.classList.add("messageYellow")
+    } else if (level == 3) {
+        messageContainer.classList.add("messageGreen")
+    }
+    
+    messageContainer.appendChild(messageTitle)
+    messageContainer.appendChild(messageDesc)
+
+    messages.appendChild(messageContainer)
+    
+    setTimeout(() => {
+        messageContainer.classList.add('removing');
+        messageContainer.addEventListener('animationend', () => {
+            messageContainer.remove()
+        }, {once: true})
+    }, 10000)
+    return;
+}
 
 
 
@@ -24,6 +60,8 @@ addEventListener("DOMContentLoaded", async (event) => {
     const controleerButton = document.getElementById("controleer")
     const helpButton = document.getElementById("help")
     const input = document.getElementById("input")
+    messages = document.getElementById("messages")
+
     const jsonData = await readJsonFile("./verbs.json")
     
     function generateNewQuestion() {
@@ -56,7 +94,16 @@ addEventListener("DOMContentLoaded", async (event) => {
     function checkAnswer() {
         if (input.value == correctAnswer) {
             console.log("correct!!!")
+            input.classList.remove("wrong")
+            input.classList.add("correct")
+            setTimeout(() => {
+                input.classList.remove("correct")
+            }, 500)
             correctAnswer = generateNewQuestion()
+        } else {
+            console.log("FALSEEEEE!!!!!!!!!!!!!!!!!!")
+            input.classList.remove("correct")
+            input.classList.add("wrong")
         }
     }
 

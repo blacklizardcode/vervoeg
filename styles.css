@@ -12,6 +12,7 @@ body {
   justify-content: center;
   color: #e8e8e8;
   margin: 0;
+  padding: 0;
   height: 100dvh;
   overflow: hidden;
 }
@@ -32,18 +33,27 @@ body {
   
   text-decoration: none;
   color: white;
+  user-select: none;
 }
 
 .textinput {
   background-color: #1E1E1E;
   width: 9rem;
   height: fit-content;
-  border: 1px solid #2a2a2a;
+  border: 0.0625rem solid #2a2a2a;
   border-radius: 0.3125rem;
   color: #e8e8e8;
   padding: 0.3125rem 0.4375rem;
   margin: 0;
-  font-size: 16px;
+  font-size: 1rem;
+}
+
+.textinput.wrong {
+  border-color: #6A2D2D;
+}
+
+.textinput.correct {
+  border-color: #2D6A2D;
 }
 
 .textinput:focus {
@@ -73,8 +83,93 @@ body {
 .secondarycontainer {
   display: flex;
   flex-direction: row;
-  padding: 10px 0px;
+  padding: 0.625rem 0rem;
   gap: 1rem;
   justify-content: center;
   align-items: center;
 }
+
+/* animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Slide out to right */
+@keyframes slideOutRight {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+} 
+
+.messages {
+  position: absolute;
+  z-index: 999;
+  right: 0;
+  top: 0;
+  padding: 1rem;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message {
+  width: 10rem;
+  height: fit-content;
+  border: 0.0625rem;
+  
+  border-style: solid;
+  border-radius: 0.3125rem;
+  
+  padding: 0.625rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3125rem;
+  justify-content: center;
+  align-items: center;
+  animation: slideInRight 0.3s ease forwards;
+}
+
+.message.removing {
+  animation: slideOutRight 0.3s ease forwards;
+}
+
+.messageTitle {
+  margin: 0;
+  padding: 0;
+  font-weight: bolder;
+}
+
+.messageDesc {
+  margin: 0;
+  padding: 0;
+}
+
+.messageGreen {
+  border-color: #2D6A2D;
+  background-color: #1A2E1A;
+}
+
+.messageYellow {
+  border-color: #6A5A2D;
+  background-color: #2E2A1A;
+}
+
+.messageRed {
+  border-color: #6A2D2D;
+  background-color: #2E1A1A;
+}
+
