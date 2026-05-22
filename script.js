@@ -53,7 +53,9 @@ function createMessage(text, subtext, level) {
 
 
 
-addEventListener("DOMContentLoaded", async (event) => { 
+
+
+async function main() {
     const verbChip = document.getElementById("verbChip")
     const tenseChip = document.getElementById("tenseChip")
     const personText = document.getElementById("personText")
@@ -120,4 +122,7 @@ addEventListener("DOMContentLoaded", async (event) => {
     })
 
     helpButton.addEventListener("click", help)
-})
+}
+
+document.addEventListener('DOMContentLoaded', main)
+document.addEventListener('page:loaded', main)
