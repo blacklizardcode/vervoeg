@@ -81,8 +81,9 @@ async function main() {
         const conjugation = randomVerb.conjugations[randomTense][randomPerson]
         
         // Log verb, tense, person and conjugation
-        console.log(`Verb: ${randomVerb.infinitive}, Tense: ${randomTense}, Person: ${randomPerson}, Conjugation: ${conjugation}`)
-
+        //console.log(`Verb: ${randomVerb.infinitive}, Tense: ${randomTense}, Person: ${randomPerson}, Conjugation: ${conjugation}`)
+        // do not log the answer.
+        
         verbChip.innerText = randomVerb.infinitive
         tenseChip.innerText = randomTense
         personText.innerText = randomPerson
@@ -103,7 +104,7 @@ async function main() {
             }, 500)
             correctAnswer = generateNewQuestion()
         } else {
-            console.log("FALSEEEEE!!!!!!!!!!!!!!!!!!")
+            console.eror("FALSEEEEE!!!!!!!!!!!!!!!!!!")
             input.classList.remove("correct")
             input.classList.add("wrong")
         }
