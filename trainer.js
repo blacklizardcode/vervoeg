@@ -61,6 +61,19 @@ function createMessage(text, subtext, level) {
     return;
 }
 
+function isConjugationCorrect(userInput, regexPattern) {
+    // Test user input against regex pattern
+    // Patterns are already in regex format like "allé(?:e)?"
+    try {
+        const regexString = `^${regexPattern}$`
+        const regex = new RegExp(regexString)
+        return regex.test(userInput)
+    } catch (e) {
+        console.error('Invalid regex pattern:', regexPattern, e)
+        return userInput === regexPattern
+    }
+}
+
 function generateNewQuestion() {
     // Get random verb
     const randomVerb = verbs[Math.floor(Math.random() * verbs.length)]
@@ -86,7 +99,7 @@ function generateNewQuestion() {
 
 
 function checkAnswer() {
-    if (input.value == correctAnswer) {
+    if (isConjugationCorrect(input.value, correctAnswer)) {
         input.classList.remove("wrong")
         input.classList.add("correct")
         setTimeout(() => {
@@ -100,7 +113,10 @@ function checkAnswer() {
 }
 
 function help() {
-    input.value = correctAnswer
+    // Convert regex pattern to a valid example by removing optional markers
+    // (?:e)? becomes empty, so allé(?:e)? becomes allé
+    const example = correctAnswer.replace(/\(\?:.\)\?/g, '')
+    input.value = example
 }
 
 

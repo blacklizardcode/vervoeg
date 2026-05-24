@@ -152,12 +152,12 @@
           "ils / elles": "iront"
         },
         "passe compose": {
-          "je": "suis allé(e)",
-          "tu": "es allé(e)",
-          " il / elle": "est allé(e)",
-          "nous": "sommes allé(e)s",
-          "vous": "êtes allé(e)(s)",
-          "ils / elles": "sont allé(e)s"
+          "je": "suis allé(?:e)?",
+          "tu": "es allé(?:e)?",
+          " il / elle": "est allé(?:e)?",
+          "nous": "sommes allé(?:e)?s",
+          "vous": "êtes allé(?:e)?(?:s)?",
+          "ils / elles": "sont allé(?:e)?s"
         },
         "conditionnel present": {
           "je": "irais",
