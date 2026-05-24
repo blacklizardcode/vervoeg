@@ -35,7 +35,7 @@ function addVerbs(verbData, irrVerbsBox, regVerbsBox) {
 }
 
 async function main() {
-    const verbData = await readJsonFile("/verbs.json")
+    const verbData = await readJsonFile("./verbs.json")
     const tensesBox = document.getElementById("tenses")
     const irrVerbsBox = document.getElementById("irrVerbs")
     const regVerbsBox = document.getElementById("regVerbs")
