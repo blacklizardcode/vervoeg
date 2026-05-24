@@ -50,18 +50,20 @@ body {
   font-size: 1rem;
 }
 
+
+
+.textinput:focus {
+  outline: none;
+  border-color: #2e2e2e;
+
+}
+
 .textinput.wrong {
   border-color: #6A2D2D;
 }
 
 .textinput.correct {
   border-color: #2D6A2D;
-}
-
-.textinput:focus {
-  outline: none;
-  border-color: #2e2e2e;
-
 }
 
 .chip {
