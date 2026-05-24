@@ -3,7 +3,7 @@
     <head>
         <link href="styles.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, interactive-widget=resizes-content">    
-        <script src="script.js"></script>
+        <script src="selector.js"></script>
     </head>
     <body>
         <div class="messages" id="messages">
@@ -17,20 +17,33 @@
             </div> -->
 
         </div>
-        <div class="maincontainer">
+        <div class="mainSelectorContainer">
+            <div class="secondarySelectorContainer">
+                <h2>Tenses</h2>
+                <div>
+                    <form id="tenses">
+
+                    </form>
+                </div>
+            </div>
+            <div class="secondarySelectorContainer">
+                <h2>Irregular verbs</h2>
+                <div>
+                    <form id="irrVerbs">
+                    </form>
+                </div>
+            </div>
+            <div class="secondarySelectorContainer">
+                <h2>Regular verbs</h2>
+                <div>
+                    <form id="regVerbs">
+                    </form>
+                </div>
+            </div>
             
-            <div class="secondarycontainer">
-                <p class="chip" id="verbChip"></p>
-                <p class="chip" id="tenseChip"></p>
-            </div>
-            <div class="secondarycontainer">
-            <p id="personText">Il </p><input type="text" class="textinput" placeholder="" id="input">
-            </div>
-            <div class="secondarycontainer">
-                <a id="help" class="button">Help</a>
-                <a id="controleer" class="button">Controleer</a>
-            </div>
-            <p id="messageBox"></p>
+        </div>
+        <div>
+            <a class="button" id="doneButton">Done</a>
         </div>
     </body>
 <head>

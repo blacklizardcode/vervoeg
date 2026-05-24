@@ -2,7 +2,7 @@
   "metadata": {
     "language": "French",
     "description": "Sample French verb dataset with important irregular and regular verbs across major tenses",
-    "tenses included": [
+    "tenses": [
       "present",
       "imparfait",
       "futur simple",
@@ -273,7 +273,7 @@
     {
       "infinitive": "parler",
       "english": "to speak",
-      "group": "regular -er",
+      "group": "regular",
       "conjugations": {
         "present": {
           "je": "parle",
@@ -304,7 +304,7 @@
     {
       "infinitive": "finir",
       "english": "to finish",
-      "group": "regular -ir",
+      "group": "regular",
       "conjugations": {
         "present": {
           "je": "finis",
@@ -335,7 +335,7 @@
     {
       "infinitive": "vendre",
       "english": "to sell",
-      "group": "regular -re",
+      "group": "regular",
       "conjugations": {
         "present": {
           "je": "vends",
