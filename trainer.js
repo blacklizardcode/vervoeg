@@ -125,8 +125,9 @@ async function main() {
     correctAnswer = generateNewQuestion()
 
     controleerButton.addEventListener("click", checkAnswer)    
-    input.addEventListener("keypress", (event) => {
+    input.addEventListener("keydown", (event) => {
         if (event.key === "Enter") {
+            event.preventDefault()
             checkAnswer()
         }
     })
